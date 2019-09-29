@@ -12,7 +12,6 @@ class MoveTask
 
   def call
     move_up   if @increment.positive?
-
     move_down if @increment.negative?
   end
 
@@ -50,15 +49,11 @@ class MoveTask
   end
 
   def small_row
-    @tasks_row[from..to]
+    @tasks_row[indexes.min..indexes.max]
   end
 
-  def from
-    [current_relation_index, new_relation_index].min
-  end
-
-  def to
-    [current_relation_index, new_relation_index].max
+  def indexes
+    [current_relation_index, new_relation_index]
   end
 
   def current_relation_index

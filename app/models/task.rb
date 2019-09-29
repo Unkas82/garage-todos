@@ -8,6 +8,7 @@
 #  deadline   :time
 #  index      :integer
 #  is_done    :boolean          default("false")
+#  file       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

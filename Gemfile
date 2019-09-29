@@ -32,6 +32,18 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'annotate'
 
+# This gem provides a simple and extremely flexible way to upload files from Ruby applications.
+# https://github.com/carrierwaveuploader/carrierwave
+gem 'carrierwave', '~> 2.0'
+
+# File Validators gem adds file size and content type validations to ActiveModel.
+# Any module that uses ActiveModel, for example ActiveRecord, can use these file validators
+gem 'file_validators'
+
+# Authorization library for Ruby
+# https://github.com/CanCanCommunity/cancancan
+gem 'cancancan', '~> 2.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
