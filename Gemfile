@@ -34,7 +34,7 @@ gem 'annotate'
 
 # This gem provides a simple and extremely flexible way to upload files from Ruby applications.
 # https://github.com/carrierwaveuploader/carrierwave
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 
 # File Validators gem adds file size and content type validations to ActiveModel.
 # Any module that uses ActiveModel, for example ActiveRecord, can use these file validators
